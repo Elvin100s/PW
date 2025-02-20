@@ -1,3 +1,4 @@
+/* Reset and box sizing to ensure consistent styling across different browsers */
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +6,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* General body styles */
 body {
     line-height: 1.6;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Dark mode styles for the body */
 body.dark-mode {
     background-color: #1a1a1a;
     color: #fff;
 }
 
+/* Dark mode toggle button styles */
 .dark-mode-toggle {
     position: fixed;
     top: 20px;
@@ -34,19 +38,21 @@ body.dark-mode {
     color: white;
 }
 
+/* Container styles for centering content */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header Styles */
+/* Header styles */
 header {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
     padding: 2rem 0;
 }
 
+/* Profile section styles */
 .profile-section {
     margin: 2rem 0;
     display: flex;
@@ -54,6 +60,7 @@ header {
     gap: 2rem;
 }
 
+/* Profile image styles */
 .profile-img {
     width: 200px;
     height: 200px;
@@ -62,6 +69,7 @@ header {
     border: 5px solid white;
 }
 
+/* Profile information styles with a float-in animation */
 .profile-info {
     text-align: left;
     opacity: 0;
@@ -69,6 +77,7 @@ header {
     animation: floatIn 1s ease forwards;
 }
 
+/* Keyframes for the float-in animation */
 @keyframes floatIn {
     to {
         opacity: 1;
@@ -76,7 +85,7 @@ header {
     }
 }
 
-/* Navigation */
+/* Navigation styles */
 nav {
     background: #fff;
     padding: 1rem 0;
@@ -86,10 +95,12 @@ nav {
     z-index: 100;
 }
 
+/* Dark mode styles for the navigation */
 .dark-mode nav {
     background: #2d2d2d;
 }
 
+/* Navigation links styles */
 nav ul {
     display: flex;
     justify-content: center;
@@ -97,6 +108,7 @@ nav ul {
     gap: 2rem;
 }
 
+/* Navigation link styles */
 nav a {
     text-decoration: none;
     color: #333;
@@ -104,30 +116,34 @@ nav a {
     transition: color 0.3s;
 }
 
+/* Dark mode styles for navigation links */
 .dark-mode nav a {
     color: #fff;
 }
 
+/* Hover effect for navigation links */
 nav a:hover {
     color: #1e3c72;
 }
 
-/* Sections */
+/* General section styles */
 section {
     padding: 4rem 0;
 }
 
+/* Section title styles */
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
     color: #1e3c72;
 }
 
+/* Dark mode styles for section titles */
 .dark-mode .section-title {
     color: #4a8eff;
 }
 
-/* Skills & Interests */
+/* Skills and interests grid styles */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -135,8 +151,9 @@ section {
     margin: 2rem 0;
 }
 
+/* Skill card styles with a float-in animation */
 .skill-card {
-    background: #f8f9fa;
+    background: #d0cae7;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
@@ -146,39 +163,44 @@ section {
     animation: floatIn 1s ease forwards;
 }
 
+/* Dark mode styles for skill cards */
 .dark-mode .skill-card {
     background: #2d2d2d;
 }
 
+/* Hover effect for skill cards */
 .skill-card:hover {
     transform: translateY(-5px);
 }
 
-/* Projects Section */
+/* Projects section grid styles */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem; /* Added space between project cards */
 }
 
+/* Project card styles */
 .project-card {
-    background: #fff;
+    background: #b9b8cb;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     padding: 1.5rem;
 }
 
+/* Dark mode styles for project cards */
 .dark-mode .project-card {
     background: #536180;
 }
 
-/* Contact Section */
+/* Contact form styles */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Input and textarea styles */
 input, textarea {
     width: 100%;
     padding: 0.8rem;
@@ -188,6 +210,7 @@ input, textarea {
     background: #fff;
 }
 
+/* Dark mode styles for input and textarea */
 .dark-mode input,
 .dark-mode textarea {
     background: #2d2d2d;
@@ -195,6 +218,7 @@ input, textarea {
     border-color: #444;
 }
 
+/* Button styles */
 button {
     background: #1e3c72;
     color: white;
@@ -205,11 +229,12 @@ button {
     transition: background 0.3s;
 }
 
+/* Hover effect for buttons */
 button:hover {
     background: #2a5298;
 }
 
-/* Contact Info Box */
+/* Contact info box styles */
 .contact-box {
     background: linear-gradient(145deg, #1a237e, #283593);
     color: rgb(128, 172, 188);
@@ -219,6 +244,7 @@ button:hover {
     margin-bottom: 2rem;
 }
 
+/* Contact item styles */
 .contact-item {
     display: flex;
     align-items: center;
@@ -229,39 +255,28 @@ button:hover {
     transition: all 0.3s ease;
 }
 
+/* Icon styles for contact items */
 .contact-item i {
     font-size: 1.5rem;
     margin-right: 1rem;
     color: #64ffda;
 }
 
-.contact-details span {
-    display: block;
-    font-size: 0.9rem;
-    color: #b3e5fc;
+/* Contact details styles */
+.contact-item span {
+    color: #64ffda; /* Match the color of "My Email" */
 }
 
-.contact-details a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+/* Dark mode styles for contact items */
+.dark-mode .contact-item span {
+    color: #64ffda; /* Ensure it remains the same color in dark mode */
+}
+/* Contact details styles */
+.contact-item a {
+    color: #64ffda; /* Match the color of "My Email" */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .profile-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .skills-grid, .projects-grid {
-        grid-template-columns: 1fr;
-    }
+/* Dark mode styles for contact items */
+.dark-mode .contact-item a {
+    color: #64ffda; /* Ensure it remains the same color in dark mode */
 }

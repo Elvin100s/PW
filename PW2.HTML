@@ -1,154 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport to ensure proper rendering and responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external stylesheet for custom styles -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Title of the webpage -->
     <title>My Portfolio</title>
 </head>
-<body>
-    <button class="dark-mode-toggle">🌓</button>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Dark mode toggle button -->
+    <button class="dark-mode-toggle p-2 text-gray-700 hover:text-gray-900 transition duration-300">🌓</button>
     
-    <header>
-        <div class="container">
-            <div class="profile-section">
-                <img src="porti.jpg" alt="Profile Picture" class="profile-img">
-                <div class="profile-info">
-                    <h1>Elvin Cyubahiro</h1>
-                    <p>AI Enthusiast | Software Engineer | Tech Leader</p>
+    <!-- Header section with profile information -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto p-6">
+            <div class="profile-section flex items-center justify-center">
+                <!-- Profile picture -->
+                <img src="porti.jpg" alt="Profile Picture" class="profile-img rounded-full w-40 h-40 object-cover">
+                <!-- Profile information with name and title -->
+                <div class="profile-info ml-4">
+                    <h1 class="text-3xl font-bold">Elvin Cyubahiro</h1>
+                    <p class="text-xl">AI Enthusiast | Software Engineer | Aspiring Tech Leader</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navigation bar with links to different sections -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto p-6">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#about" class="text-gray-700 hover:text-gray-900 transition duration-300">About</a></li>
+                <li><a href="#skills" class="text-gray-700 hover:text-gray-900 transition duration-300">Skills</a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-gray-900 transition duration-300">Projects</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-gray-900 transition duration-300">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p>
-                [Your introduction goes here. Talk about your passion for AI, software engineering, leadership, and your diverse interests in coding, music, and sports.]
+    <!-- About section with a brief introduction -->
+    <section id="about" class="bg-white p-6 shadow-md rounded-lg max-w-4xl mx-auto mt-8">
+        <div class="container mx-auto">
+            <h2 class="section-title text-2xl font-bold mb-4">About Me</h2>
+            <p class="text-lg leading-7">
+                I am a driven and passionate individual with a clear vision for the future of the tech industry. My goal is to harness the power of artificial intelligence (AI) to innovate and revolutionize both software and hardware sectors. By combining cutting-edge AI technologies with robust and user-friendly hardware, I aim to create solutions that not only enhance efficiency and productivity but also improve the quality of life for people around the globe. My approach is rooted in a deep understanding of the latest technological advancements and a relentless drive to push the boundaries of what is possible. Whether it’s developing intelligent software applications or designing advanced hardware systems, my focus is on delivering transformative technologies that can shape the future of the tech industry and beyond.
             </p>
         </div>
     </section>
 
+    <!-- Skills section with a grid layout for different categories -->
     <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Interests</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Languages</h3>
+        <div class="container mx-auto p-6">
+            <h2 class="section-title text-2xl font-bold mb-4">Skills & Interests</h2>
+            <div class="skills-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Language skills card -->
+                <div class="skill-card p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Languages</h3>
                     <p>English (Fluent)<br>French (Basic)<br>Kinyarwanda (Native)</p>
                 </div>
-                <div class="skill-card">
-                    <h3>Technical Skills</h3>
-                    <p>AI/ML<br>Python<br>JavaScript<br>Leadership<br>Problem Solving<br>Data Analysis</p>
+                <!-- Technical skills card -->
+                <div class="skill-card p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Technical Skills</h3>
+                    <p>AI<br>Python<br>JavaScript<br>Leadership<br>Problem Solving<br>Data Analysis</p>
                 </div>
-                <div class="skill-card">
-                    <h3>Interests</h3>
+                <!-- Interests card -->
+                <div class="skill-card p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Interests</h3>
                     <p>Coding<br>Basketball<br>Music Production<br>Tech Innovation<br>Sports Analytics</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects section with a grid layout for different projects -->
     <section id="projects">
-        <div class="container">
-            <h2 class="section-title">MY PROJECTS</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>1. YouTube Clone Project</h3>
+        <div class="container mx-auto p-6">
+            <h2 class="section-title text-2xl font-bold mb-4">My Projects</h2>
+            <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project card for YouTube Clone Project -->
+                <div class="project-card p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">1. YouTube Clone Project (HTML & CSS)</h3>
                     <p>• Built a fully responsive video streaming platform with modern UI/UX design</p>
-                    <p>• Implemented user authentication, profile management, and video upload functionality</p>
-                    <p>• Created interactive comment system with threading and like/dislike features</p>
+                    <p>• Created an interactive comment system with threading and like/dislike features</p>
                     <p>• Added video recommendations and search functionality with filters</p>
                 </div>
-        
-                <div class="project-card">
-                    <h3>2. NBA Player Statistics Platform</h3>
-                    <p>• Developed interactive player statistics dashboard</p>
-                    <p>• Integrated real-time game scores and player performance metrics</p>
-                    <p>• Created player comparison tools and career highlights section</p>
-                    <p>• Added customizable dashboard views and data export features</p>
+                <!-- Project card for Calculator -->
+                <div class="project-card p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">2. Calculator</h3>
+                    <p>• Built a functional calculator</p>
+                    <p>• Added various functionalities</p>
                 </div>
-
-                <div class="project-card">
-                    <h3>3. AI Personal Assistant(still developing)</h3>
+                <!-- Project card for Crush Course (Prototype) -->
+                <div class="project-card p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">3. Crush Course (Prototype)</h3>
+                    <p>• Building a dating app with React</p>
+                    <p>• Added profile settings</p>
+                    <p>• Implemented login, registration, and match animations</p>
+                </div>
+                <!-- Project card for AI Personal Assistant (Still Developing) -->
+                <div class="project-card p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">4. AI Personal Assistant (Still Developing)</h3>
                     <p>• Building an AI assistant using Python and OpenAI's GPT API</p>
                     <p>• Implementing voice recognition and natural language processing</p>
                     <p>• Adding home automation control and task scheduling features</p>
                     <p>• Integrating with third-party services for enhanced functionality</p>
                 </div>
-
-                <div class="project-card">
-                    <h3>4. Portfolio Website</h3>
-                    <p>• Designed and developed a responsive portfolio website</p>
-                    <p>• Implemented dark mode and smooth scrolling features</p>
-                    <p>• Created interactive project showcases and contact forms</p>
+                <!-- Project card for TO-DO List App -->
+                <div class="project-card p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">5. TO-DO List App</h3>
+                    <p>• Designed and developed a responsive to-do list application</p>
+                    <p>• Implemented various features</p>
+                    <p>• Created interactive project showcases</p>
                     <p>• Optimized performance and accessibility standards</p>
                 </div>
-
-                <div class="project-card">
-                    <h3>5. More Projects on GitHub</h3>
-                    <p>• For more exciting projects and code samples</p>
-                    <p>• Please visit my GitHub profile</p>
-                    <p>• Where you can explore my complete portfolio</p>
-                    <p>• And see my contributions to open source</p>
+                <!-- Project card for more projects on GitHub -->
+                <div class="project-card p-4 bg-white shadow-md rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">More Projects on GitHub</h3>
+                    <p>• For more exciting projects and code samples, please visit my GitHub profile where you can explore my complete portfolio and see my contributions to open source.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact section with contact information and a form -->
     <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
+        <div class="container mx-auto p-6">
+            <h2 class="section-title text-2xl font-bold mb-4">Contact Me</h2>
             
-            <div class="contact-box">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
+            <!-- Contact info box with email, GitHub, and phone links -->
+            <div class="contact-box flex justify-center space-x-4 mb-8">
+                <div class="contact-item flex items-center">
+                    <i class="fas fa-envelope text-gray-700 mr-2"></i>
                     <div class="contact-details">
-                        <span>My Email</span>
-                        <a href="mailto:your.email@example.com">e.cyubahiro@gmail.com.com</a>
+                        <span class="text-gray-700">My Email:</span>
+                        <a href="mailto:your.email@example.com" class="text-blue-500 hover:underline">e.cyubahiro@alustudent.com</a>
                     </div>
                 </div>
-                
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
+                <div class="contact-item flex items-center">
+                    <i class="fab fa-github text-gray-700 mr-2"></i>
                     <div class="contact-details">
-                        <span>GitHub</span>
-                        <a href="https://github.com/Elvin100s" target="_blank">github.com/yourusername</a>
+                        <span class="text-gray-700">GitHub:</span>
+                        <a href="https://github.com/Elvin100s" target="_blank" class="text-gray-700 hover:underline">github.com/Elvin100s</a>
                     </div>
                 </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
+                <div class="contact-item flex items-center">
+                    <i class="fas fa-phone text-gray-700 mr-2"></i>
                     <div class="contact-details">
-                        <span>Phone</span>
-                        <a href="tel:+1234567890">+250785020191</a>
+                        <span class="text-gray-700">Phone:</span>
+                        <a href="tel:+250785020191" class="text-gray-700 hover:underline">+250785020191</a>
                     </div>
                 </div>
             </div>
 
-            <form class="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea rows="5" placeholder="Message" required></textarea>
-                <button type="submit">Send Message</button>
+            <!-- Contact form for sending messages -->
+            <form class="contact-form space-y-4">
+                <input type="text" placeholder="Name" required class="w-full p-2 border border-gray-300 rounded-lg">
+                <input type="email" placeholder="Email" required class="w-full p-2 border border-gray-300 rounded-lg">
+                <textarea rows="5" placeholder="Message" required class="w-full p-2 border border-gray-300 rounded-lg"></textarea>
+                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition duration-300">Send Message</button>
             </form>
         </div>
     </section>
 
-
+    <!-- Link to the external JavaScript file for interactivity -->
     <script src="script.js"></script>
 </body>
 </html>
