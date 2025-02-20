@@ -2,102 +2,103 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets a consistent font family */
 }
 
 /* General body styles */
 body {
-    line-height: 1.6;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6; /* Sets a comfortable line height for readability */
+    color: #333; /* Default text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode toggle */
 }
 
 /* Dark mode styles for the body */
 body.dark-mode {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #1a1a1a; /* Dark background for dark mode */
+    color: #fff; /* Light text color for dark mode */
 }
 
 /* Dark mode toggle button styles */
 .dark-mode-toggle {
-    position: fixed;
+    position: fixed; /* Keeps the button fixed in the viewport */
     top: 20px;
     right: 20px;
-    z-index: 1000;
+    z-index: 1000; /* Ensures the button is always on top */
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes the button circular */
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #1e3c72;
-    cursor: pointer;
+    background: #1e3c72; /* Background color for the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
     border: none;
     color: white;
 }
 
 /* Container styles for centering content */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 20px; /* Adds padding to the container for better spacing */
 }
 
 /* Header styles */
 header {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-    padding: 2rem 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background for the header */
+    color: white; /* Text color for the header */
+    padding: 2rem 0; /* Padding for the header */
 }
 
 /* Profile section styles */
 .profile-section {
-    margin: 2rem 0;
+    margin: 2rem 0; /* Margin around the profile section */
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem; /* Space between profile image and info */
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 /* Profile image styles */
 .profile-img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid white;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire space without distortion */
+    border: 5px solid white; /* Adds a white border around the image */
 }
 
 /* Profile information styles with a float-in animation */
 .profile-info {
-    text-align: left;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: floatIn 1s ease forwards;
+    text-align: left; /* Aligns text to the left */
+    opacity: 0; /* Initial opacity for the animation */
+    transform: translateY(20px); /* Initial transform for the animation */
+    animation: floatIn 1s ease forwards; /* Applies the float-in animation */
 }
 
 /* Keyframes for the float-in animation */
 @keyframes floatIn {
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* Final opacity for the animation */
+        transform: translateY(0); /* Final transform for the animation */
     }
 }
 
 /* Navigation styles */
 nav {
-    background: #fff;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
+    background: #fff; /* Background color for the navigation */
+    padding: 1rem 0; /* Padding for the navigation */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+    position: sticky; /* Keeps the navigation sticky at the top */
     top: 0;
-    z-index: 100;
+    z-index: 100; /* Ensures the navigation is always on top */
 }
 
 /* Dark mode styles for the navigation */
 .dark-mode nav {
-    background: #2d2d2d;
+    background: #2d2d2d; /* Dark background for the navigation in dark mode */
 }
 
 /* Navigation links styles */
@@ -105,161 +106,161 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 2rem;
+    gap: 2rem; /* Space between navigation links */
 }
 
 /* Navigation link styles */
 nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Text color for links */
+    font-weight: 500; /* Font weight for links */
+    transition: color 0.3s; /* Smooth transition for link color change */
 }
 
 /* Dark mode styles for navigation links */
 .dark-mode nav a {
-    color: #fff;
+    color: #fff; /* Light text color for links in dark mode */
 }
 
 /* Hover effect for navigation links */
 nav a:hover {
-    color: #1e3c72;
+    color: #1e3c72; /* Changes link color on hover */
 }
 
 /* General section styles */
 section {
-    padding: 4rem 0;
+    padding: 4rem 0; /* Padding for sections */
 }
 
 /* Section title styles */
 .section-title {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: #1e3c72;
+    text-align: center; /* Centers the section title */
+    margin-bottom: 3rem; /* Margin below the section title */
+    color: #1e3c72; /* Text color for section titles */
 }
 
 /* Dark mode styles for section titles */
 .dark-mode .section-title {
-    color: #4a8eff;
+    color: #4a8eff; /* Lighter text color for section titles in dark mode */
 }
 
 /* Skills and interests grid styles */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates a responsive grid layout */
+    gap: 2rem; /* Space between grid items */
+    margin: 2rem 0; /* Margin around the grid */
 }
 
 /* Skill card styles with a float-in animation */
 .skill-card {
-    background: #d0cae7;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: floatIn 1s ease forwards;
+    background: #d0cae7; /* Background color for skill cards */
+    padding: 2rem; /* Padding for skill cards */
+    border-radius: 10px; /* Rounded corners for skill cards */
+    text-align: center; /* Centers the text in skill cards */
+    transition: transform 0.3s; /* Smooth transition for card hover effect */
+    opacity: 0; /* Initial opacity for the animation */
+    transform: translateY(20px); /* Initial transform for the animation */
+    animation: floatIn 1s ease forwards; /* Applies the float-in animation */
 }
 
 /* Dark mode styles for skill cards */
 .dark-mode .skill-card {
-    background: #2d2d2d;
+    background: #2d2d2d; /* Dark background for skill cards in dark mode */
 }
 
 /* Hover effect for skill cards */
 .skill-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Lifts the card slightly on hover */
 }
 
 /* Projects section grid styles */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem; /* Added space between project cards */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid layout */
+    gap: 2rem; /* Space between grid items */
 }
 
 /* Project card styles */
 .project-card {
-    background: #b9b8cb;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    padding: 1.5rem;
+    background: #b9b8cb; /* Background color for project cards */
+    border-radius: 10px; /* Rounded corners for project cards */
+    overflow: hidden; /* Ensures content doesn't overflow the card */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+    padding: 1.5rem; /* Padding for project cards */
 }
 
 /* Dark mode styles for project cards */
 .dark-mode .project-card {
-    background: #536180;
+    background: #536180; /* Dark background for project cards in dark mode */
 }
 
 /* Contact form styles */
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 600px; /* Maximum width for the contact form */
+    margin: 0 auto; /* Centers the contact form horizontally */
 }
 
 /* Input and textarea styles */
 input, textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background: #fff;
+    width: 100%; /* Ensures inputs and textareas take full width */
+    padding: 0.8rem; /* Padding for inputs and textareas */
+    margin-bottom: 1rem; /* Margin below inputs and textareas */
+    border: 1px solid #ddd; /* Border for inputs and textareas */
+    border-radius: 5px; /* Rounded corners for inputs and textareas */
+    background: #fff; /* Background color for inputs and textareas */
 }
 
 /* Dark mode styles for input and textarea */
 .dark-mode input,
 .dark-mode textarea {
-    background: #2d2d2d;
-    color: #fff;
-    border-color: #444;
+    background: #2d2d2d; /* Dark background for inputs and textareas in dark mode */
+    color: #fff; /* Light text color for inputs and textareas in dark mode */
+    border-color: #444; /* Dark border color for inputs and textareas in dark mode */
 }
 
 /* Button styles */
 button {
-    background: #1e3c72;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+    background: #1e3c72; /* Background color for buttons */
+    color: white; /* Text color for buttons */
+    padding: 0.8rem 2rem; /* Padding for buttons */
+    border: none; /* Removes border from buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background 0.3s; /* Smooth transition for button background change */
 }
 
 /* Hover effect for buttons */
 button:hover {
-    background: #2a5298;
+    background: #2a5298; /* Changes button background color on hover */
 }
 
 /* Contact info box styles */
 .contact-box {
-    background: linear-gradient(145deg, #1a237e, #283593);
-    color: rgb(128, 172, 188);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    margin-bottom: 2rem;
+    background: linear-gradient(145deg, #1a237e, #283593); /* Gradient background for the contact box */
+    color: rgb(128, 172, 188); /* Text color for the contact box */
+    padding: 2rem; /* Padding for the contact box */
+    border-radius: 15px; /* Rounded corners for the contact box */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds a subtle shadow for depth */
+    margin-bottom: 2rem; /* Margin below the contact box */
 }
 
 /* Contact item styles */
 .contact-item {
     display: flex;
-    align-items: center;
-    margin: 1.2rem 0;
-    padding: 0.8rem;
-    background: rgba(255,255,255,0.1);
-    border-radius: 10px;
-    transition: all 0.3s ease;
+    align-items: center; /* Vertically aligns items in the contact item */
+    margin: 1.2rem 0; /* Margin around contact items */
+    padding: 0.8rem; /* Padding for contact items */
+    background: rgba(255,255,255,0.1); /* Light background for contact items */
+    border-radius: 10px; /* Rounded corners for contact items */
+    transition: all 0.3s ease; /* Smooth transition for contact item effects */
 }
 
 /* Icon styles for contact items */
 .contact-item i {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    color: #64ffda;
+    font-size: 1.5rem; /* Font size for icons */
+    margin-right: 1rem; /* Space between icons and text */
+    color: #64ffda; /* Color for icons */
 }
 
 /* Contact details styles */
@@ -271,6 +272,7 @@ button:hover {
 .dark-mode .contact-item span {
     color: #64ffda; /* Ensure it remains the same color in dark mode */
 }
+
 /* Contact details styles */
 .contact-item a {
     color: #64ffda; /* Match the color of "My Email" */
@@ -279,4 +281,93 @@ button:hover {
 /* Dark mode styles for contact items */
 .dark-mode .contact-item a {
     color: #64ffda; /* Ensure it remains the same color in dark mode */
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    header .profile-section {
+        flex-direction: column; /* Stacks profile image and info vertically */
+        align-items: center; /* Centers the profile section */
+    }
+
+    header .profile-info h1 {
+        font-size: 1.5rem; /* Reduces font size for the profile name */
+    }
+
+    header .profile-info p {
+        font-size: 1rem; /* Reduces font size for the profile description */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stacks navigation links vertically */
+        align-items: center; /* Centers the navigation links */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Reduces margin between navigation links */
+    }
+
+    .main-content {
+        padding: 10px; /* Reduces padding for the main content */
+    }
+
+    .skill-card, .project-card {
+        padding: 1rem; /* Reduces padding for skill and project cards */
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 0.5rem; /* Reduces padding for form inputs and textareas */
+    }
+
+    .contact-form button {
+        padding: 0.5rem 1rem; /* Reduces padding for form buttons */
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    header .profile-section {
+        flex-direction: column; /* Stacks profile image and info vertically */
+        align-items: center; /* Centers the profile section */
+    }
+
+    header .profile-img {
+        width: 150px;
+        height: 150px; /* Reduces size of the profile image */
+    }
+
+    header .profile-info h1 {
+        font-size: 1.2rem; /* Further reduces font size for the profile name */
+    }
+
+    header .profile-info p {
+        font-size: 0.9rem; /* Further reduces font size for the profile description */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stacks navigation links vertically */
+        align-items: center; /* Centers the navigation links */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Reduces margin between navigation links */
+    }
+
+    .main-content {
+        padding: 5px; /* Further reduces padding for the main content */
+    }
+
+    .skill-card, .project-card {
+        padding: 0.5rem; /* Further reduces padding for skill and project cards */
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 0.5rem; /* Further reduces padding for form inputs and textareas */
+    }
+
+    .contact-form button {
+        padding: 0.5rem 1rem; /* Further reduces padding for form buttons */
+    }
 }
